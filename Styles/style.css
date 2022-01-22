@@ -8,10 +8,10 @@
 	--main-color: #6A6CD0;
 	--blue: #0000ff;
 	--blue-dark: #1976d2;
-	--violet-light: #7554AF;
+	--violet-light: cyan;
 	--orange: #ffa500;
 	--green-yellow: #cddc39;
-	--purple-light: #687AE6;
+	--purple-light: #cd6fff;
 	--white: #ffffff;
 	--white-alpha-40: rgba(255,255,255,0.40);
 	--white-alpha-25: rgba(255,255,255,0.25);
@@ -80,9 +80,9 @@ section{
 	background-color: var(--white-alpha-25);
 	border: 1px solid var(--white-alpha-40);
 	min-height: 90vh;
-	border-radius: 30px;
-	-webkit-box-shadow: 3px 4px 15px 1px var(--white-alpha-40), 24px -28px 34px -13px rgba(0,0,0,0.05); 
-	box-shadow: 3px 4px 15px 1px var(--white-alpha-25), 24px -28px 34px -13px rgba(0,0,0,0.05);
+	box-shadow: 12px 15px 27px 1px rgba(0,0,0,0.28);	
+	-webkit-box-shadow: 12px 15px 27px 1px rgba(0,0,0,0.28);
+	-moz-box-shadow: 12px 15px 27px 1px rgba(0,0,0,0.28);	
 }
 .main{
 	max-width: 1200px;
@@ -230,7 +230,9 @@ button{
 
 .about-img{
 	width: 40%;
+	max-height: 28	0px;
 	padding: 0 15px;
+
 }
 .about-text{
 	width: 50%;
@@ -242,8 +244,16 @@ button{
 	border: 3px solid var(--white-alpha-40);
 	margin: auto;
 	border-radius: 8px;
+	box-shadow: 12px 15px 27px 1px rgba(0,0,0,0.28);
+	-webkit-box-shadow: 12px 15px 27px 1px rgba(0,0,0,0.28);
+	-moz-box-shadow: 12px 15px 27px 1px rgba(0,0,0,0.28);
+	transition: all 0.25s ease;
 }
 
+.about-img .img-box:hover{
+	border-radius: 50%;
+	background-color: var(--white-alpha-40);
+}
 
 .about-img .img-box img{
 	width: 100%;
@@ -258,7 +268,12 @@ button{
 .about-text p{
 	color: var(--white);
 }
-
+.about-text ion-icon{
+	position: relative;
+	top: 3px;
+	font-size: 20px;
+	padding: 0px 5px 0 0px;
+}
 .about-text .skills{
 	display: flex;
 	flex-wrap: wrap;
@@ -296,7 +311,7 @@ button{
 	font-size: 20px;
 	cursor: pointer;
 	font-weight: 500;
-	margin: 0 30px 0 0;
+	margin: 0 30px 20px 0;
 	position: relative;
 	transition: all 0.3s ease;
 	
@@ -330,4 +345,52 @@ button{
 	color: var(--main-color);
 	opacity: 1;
 	cursor: auto;
+}
+.about-text .tab-content{
+	position: relative;
+}
+.about-text .timeline::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	top: 0;
+	left: 5px;
+	background-color: var(--main-color);
+}
+.about-text .tab-content{
+	padding: 40px 0;
+}
+.about-text .timeline-item{
+	margin-bottom: 30px;
+	position: relative;
+	padding: 10px 0 0 40px;
+}
+.about-text .timeline-item::before{
+	content: '';
+	position: absolute;
+	height: 11px;
+	width: 11px;
+	background-color: var(--main-color);
+	left: 0;
+	top: 16px;
+	border-radius: 50%;
+}
+.about-text .timeline-item:last-child{
+	margin-bottom: 0;
+}
+.about-text .timeline-item .date{
+	display: block;
+	color: var(--main-color);
+	font-weight: 400;
+	margin: 0 0 10px;
+}
+.about-text .timeline-item h4{
+	font-size: 18px;
+	text-transform: capitalize;
+	color: var(--main-color);
+}
+
+.about-text .timeline-item h4 span{
+	font-weight: 400;
 }
