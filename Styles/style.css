@@ -74,6 +74,9 @@
 		text-decoration: none;
 
 	}
+	ul{
+		list-style: none;
+	}
 
 	section{
 		backdrop-filter:  var(--backdrop-filter-blur);
@@ -406,7 +409,9 @@
 		margin: 0 15px 15px 0;
 	}
 /* Sessao portifolio */
-
+	.portfolio-section{
+		padding-bottom: 50px;
+	}
 	.portfolio-item{
 		width: calc((100% / 3) - 30px);
 		margin: 0 15px 30px;
@@ -414,6 +419,8 @@
 	.portfolio-item-thumbnail{
 		padding: 10px;
 		background-color: var(--white-alpha-25);
+		border: 1px solid var(--white-alpha-40);
+		border-radius: 10px;
 	}
 	.portfolio-item-thumbnail img{
 		width: 100%;
@@ -426,4 +433,72 @@
 	}
 	.portfolio-item-details{
 		display: none;
+	}
+
+/* popup do portifolio */
+
+	.portfolio-popup{
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 200;
+		overflow-y: auto;
+		visibility: hidden;
+	}
+	.pp-inner{
+		min-height: 100vh;
+		padding: 40px 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.pp-content{
+		background-color: var(--white-alpha-25);
+		padding: 30px;
+		border-radius: 30px;
+		max-width: 900px;
+		width: 100%;
+		border: 1px solid var(--white-alpha-40);
+		backdrop-filter: var(--backdrop-filter-blur);
+	}
+	.pp-header{
+		position: relative;
+	}
+	.pp-header .btn{
+		height: 40px;
+		width: 40px;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		right: -40px;
+		top: -40px;
+	}
+	.pp-header ion-icon{
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.pp-header h3{
+		font-size: 25px;
+		text-transform: capitalize;
+		margin: 20px 0 15px;
+		color: var(--white);
+	}
+	.pp-body .description{
+		margin-bottom: 20px;
+	}
+	.pp-body .general-info li{
+		margin-bottom: 10px;
+		font-weight: 500;
+		text-transform: capitalize;
+	}
+	.pp-body .general-info li span{
+		font-weight: 300;
+	}
+	.pp-body .general-info li a{
+		text-transform: lowercase;
+		color: var(--main-color);
 	}
