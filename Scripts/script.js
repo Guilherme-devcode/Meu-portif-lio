@@ -1,28 +1,28 @@
 // particulas background
-function createBox() {
+// function createBox() {
 
-    let span = document.createElement('span');
+//     let span = document.createElement('span');
 
-    span.classList.add('animated-box');
+//     span.classList.add('animated-box');
 
-    let size = Math.random() * 80;
+//     let size = Math.random() * 50;
 
-    span.style.height = 40 + size + 'px';
-    span.style.width = 40 + size + 'px';
+//     span.style.height = 20 + size + 'px';
+//     span.style.width = 20 + size + 'px';
 
-    span.style.top = Math.random() * innerHeight + 'px';
-	span.style.borderRadius = "50%"
-    span.style.left = Math.random() * innerWidth + 'px';
+//     span.style.top = Math.random() * innerHeight + 'px';
+// 	span.style.borderRadius = "50%"
+//     span.style.left = Math.random() * innerWidth + 'px';
 
-    document.querySelector('.gradient-background').appendChild(span);
+//     document.querySelector('.gradient-background').appendChild(span);
 
-    setTimeout(() =>{
-        span.remove();
-    },5000)
+//     setTimeout(() =>{
+//         span.remove();
+//     },5000)
 
-}
+// }
 
-setInterval(createBox, 400);
+// setInterval(createBox, 400);
 
 
 
@@ -75,3 +75,44 @@ function portfolioItemDetails(portfolioItem){
 	document.querySelector(".pp-body").innerHTML = 
 	portfolioItem.querySelector(".portfolio-item-details").innerHTML
 }
+
+// Navegação
+
+const navToggler = document.querySelector(".nav-toggler")
+navToggler.addEventListener("click", ()=>{
+	hideSection();
+	toggleNavbar();
+	document.body.classList.toggle("hide-scrolling")
+})
+function toggleNavbar(){
+	document.querySelector(".header").classList.toggle("active");
+}
+function hideSection(){
+	document.querySelector("section.active").classList.toggle("fade-out")
+}
+
+// Sessao ativa
+
+document.addEventListener("click", (e)=>{
+	if(e.target.classList.contains("link-item") && e.target.hash !== ""){
+		// ativar overlay
+		document.querySelector(".overlay").classList.add("active");	
+		navToggler.classList.add("hide")
+		if(e.target.classList.contains("nav-item")){
+			toggleNavbar();
+		}
+		else{
+			hideSection();
+			document.body.classList.add("hide-scrolling")
+
+		}
+		setTimeout(()=>{
+			document.querySelector("section.active").classList.remove("active", "fade-out")
+			document.querySelector(e.target.hash).classList.add("active");
+			window.scrollTo(0,0)
+			document.body.classList.remove("hide-scrolling")
+			navToggler.classList.remove("hide")
+			document.querySelector(".overlay").classList.remove("active");	
+		},500)
+	}
+})

@@ -7,28 +7,51 @@
 	<title>Portifolio</title>
 </head>
 
-<body class="gradient-background">
+<body>
 
+
+	<!-- Sobreposição -->
+	<div class="overlay">
+
+	</div>
 
 	<!-- Começa o Main -->
-	<div class="main">
+	<div class="main gradient-background">
 
 
 		<!-- Header inicio -->
-
+		<header class="header">
+			<div class="container">
+				<div class="row flex-end">
+					<button type="button" class="nav-toggler">
+						<span></span>
+					</button>
+					<nav class="nav">
+						<div class="nav-inner">
+							<ul>
+								<li><a href="#home" class="nav-item link-item">inicio</a></li>
+								<li><a href="#about" class="nav-item link-item">sobre mim</a></li>
+								<li><a href="#portfolio" class="nav-item link-item">projetos</a></li>
+								<li><a href="#contact" class="nav-item link-item">contato</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
 		<!-- Header inicio -->
-	
+
 
 		<!-- Sessão home começa-->
-		<section class="home-section align-items-center ">
+		<section class="home-section align-items-center active" id="home">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="home-text">
 						<p>Olá, eu sou o</p>
 						<h1>Guilherme</h1>
 						<h2>Desenvolvedor Front end</h2>
-						<a href="#" class="btn">mais sobre mim</a>
-						<a href="#" class="btn">portifolio</a>
+						<a href="#about" class="btn link-item">mais sobre mim</a>
+						<a href="#portfolio" class="btn link-item">portifolio</a>
 					</div>
 					<div class="home-img">
 						<div class="img-box">
@@ -41,7 +64,7 @@
 		<!-- Sessão home termina-->
 
 		<!-- Sessão Sobre Começa -->
-		<section class="about-section sec-padding hidden">
+		<section class="about-section sec-padding " id="about">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
@@ -152,8 +175,8 @@
 						</div>
 						<!-- Sessão cursos termina -->
 
-						<a href="#" class="btn">Baixar currículo</a>
-						<a href="#" class="btn">Contato</a>
+						<a href="/documents/GUILHERME MESQUITA ROCHA.pdf" target="_blank" class="btn">Baixar currículo</a>
+						<a href="#contact" class="btn link-item">Contato</a>
 
 					</div>
 				</div>
@@ -162,7 +185,7 @@
 		<!-- Sessão Sobre Termina -->
 
 		<!-- Sessão portifolio começo 😍 -->
-		<section class="portfolio-section sec-padding hidden">
+		<section class="portfolio-section sec-padding " id="portfolio">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
@@ -350,7 +373,7 @@
 		<!-- Sessão portifolio fim 😍 -->
 
 		<!-- Sessao contato inicio -->
-		<section class="contact-section sec-padding hidden">
+		<section class="contact-section sec-padding" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="section-title">
