@@ -697,6 +697,9 @@ button {
 .about-text .timeline-item h4 span {
   font-weight: 400;
 }
+.about-text .timeline-item{
+  text-transform: capitalize;
+}
 
 .about-text .btn {
   margin: 0 15px 15px 0;
@@ -793,13 +796,16 @@ button {
 }
 .pp-body .description {
   margin-bottom: 20px;
+  color: white;
 }
 .pp-body .general-info li {
   margin-bottom: 10px;
-  font-weight: 500;
+  color: var(--main-color);
+  font-weight: 600;
   text-transform: capitalize;
 }
 .pp-body .general-info li span {
+  color: white;
   font-weight: 300;
 }
 .pp-body .general-info li a {
@@ -848,6 +854,7 @@ button {
 .contact-info-item {
   margin: 0 0 30px;
   padding: 0 0 0 20px;
+  color: var(--main-color);
 }
 .contact-info-item h3 {
   font-size: 20px;
@@ -918,6 +925,9 @@ button {
   .contact-info{
     order: -1;
     margin-bottom: 15px;
+  }
+  .contact-info-item{
+    padding: 0;
   }
 }
 @media(max-width:575px){
