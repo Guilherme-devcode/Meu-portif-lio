@@ -492,7 +492,6 @@ button {
   position: absolute;
   transition: all 0.5s ease;
   z-index: 1;
-
 }
 .logo:hover{
   background-color: var(--white-alpha-40);
