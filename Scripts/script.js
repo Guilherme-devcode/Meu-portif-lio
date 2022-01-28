@@ -86,9 +86,11 @@ navToggler.addEventListener("click", ()=>{
 })
 function toggleNavbar(){
 	document.querySelector(".header").classList.toggle("active");
+	
 }
 function hideSection(){
 	document.querySelector("section.active").classList.toggle("fade-out")
+	
 }
 
 // Sessao ativa

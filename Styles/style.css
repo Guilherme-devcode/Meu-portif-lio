@@ -154,6 +154,9 @@ section.fade-out {
 .flex-end {
   justify-content: flex-end;
 }
+.flex-start{
+  justify-content: flex-start;
+}
 
 /* Section Title */
 .sec-padding {
@@ -475,6 +478,34 @@ button {
   letter-spacing: 5px;
 }
 
+.logo{
+  display: flex;
+  left: 0;
+  top: 0;
+  letter-spacing: -4px;
+  margin: 20px 40px;
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  cursor: default;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+
+}
+.logo:hover{
+  background-color: var(--white-alpha-40);
+}
+.logo h1{
+  font-weight: 600;
+  color: var(--white);  
+  transition: all 0.5s ease;
+}
+.logo h1:hover{
+  color: var(--main-color);
+  letter-spacing: -2px;
+}
 /*Sessão Home*/
 
 .home-section {
