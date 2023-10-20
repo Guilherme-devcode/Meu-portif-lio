@@ -766,6 +766,7 @@ button {
 }
 .portfolio-item-thumbnail img {
   width: 100%;
+  object-fit: cover;
   max-height: 180px;
 }
 .portfolio-item h3 {
