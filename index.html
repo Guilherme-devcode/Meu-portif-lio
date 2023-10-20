@@ -1,546 +1,817 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="favicon/svg" href="favicon.svg" />
+    <title>Portifolio</title>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="Styles/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="favicon/svg" href="favicon.svg" />
-	<title>Portifolio</title>
-</head>
+  <body>
+    <!-- Circulos do background inicio -->
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+    <!-- Circulos do background fim -->
 
-<body>
-	<!-- Circulos do background inicio -->
-	<div class="bg-circles">
-		<div class="circle-1"></div>
-		<div class="circle-2"></div>
-		<div class="circle-3"></div>
-		<div class="circle-4"></div>
+    <!-- Sobreposição -->
+    <div class="overlay"></div>
 
-	</div>
-	<!-- Circulos do background fim -->
+    <!-- Começa o Main -->
+    <div class="main gradient-background">
+      <!-- Header inicio -->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button type="button" class="nav-toggler">
+              <span></span>
+            </button>
+            <nav class="nav">
+              <div class="nav-inner">
+                <ul>
+                  <li><a href="#home" class="nav-item link-item">inicio</a></li>
+                  <li>
+                    <a href="#about" class="nav-item link-item">sobre mim</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio" class="nav-item link-item">projetos</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-item link-item">contato</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Header inicio -->
 
-	<!-- Sobreposição -->
-	<div class="overlay">
+      <!-- Sessão home começa-->
+      <section class="home-section align-items-center active" id="home">
+        <div class="logo flex-end">
+          <h1>< G /></h1>
+        </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="home-text">
+              <p>Olá, eu sou o</p>
+              <h1>Guilherme</h1>
+              <h2>Desenvolvedor Front end</h2>
+              <a href="#about" class="btn link-item">mais sobre mim</a>
+              <a href="#portfolio" class="btn link-item">portifolio</a>
+            </div>
+            <div class="home-img">
+              <div class="img-box">
+                <img src="Images/profile-pic.jpg" alt="profile-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sessão home termina-->
 
-	</div>
+      <!-- Sessão Sobre Começa -->
+      <section class="about-section sec-padding" id="about">
+        <div class="logo">
+          <h1>< G /></h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>sobre mim</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-img">
+              <div class="img-box">
+                <img class="img" src="Images/profile.png" />
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                Sou um desenvolvedor experiente e versátil, especializado tanto
+                em front-end quanto em back-end, com profundo conhecimento em
+                desenvolvimento web e mobile. Minha paixão é transformar
+                conceitos em soluções digitais de alto impacto. Estou sempre
+                buscando inovação e atualização constante para enfrentar
+                desafios e superar expectativas.
+              </p>
+              <h3>Habilidades</h3>
+              <div class="skills">
+                <div class="skill-item">
+                  <ion-icon name="logo-html5"></ion-icon>html
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-css3"></ion-icon>css
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-sass"></ion-icon>Sass
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-javascript"></ion-icon>javascript
+                </div>
+                <div class="skill-item">
+                  <img
+                    class="icon-framework"
+                    src="/svgs/typescript-icon.svg"
+                    alt="logo-typescript"
+                  />
+                  Typescript
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-angular"></ion-icon>Angular
+                </div>
+                <div class="skill-item">
+                  <img
+                    class="icon-framework"
+                    src="/svgs/flutter-icon.svg"
+                    alt="logo-flutter"
+                  />
+                  Flutter
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-nodejs"></ion-icon>Node
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-react"></ion-icon>reactjs
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-firebase"></ion-icon>firebase
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-github"></ion-icon>Github
+                </div>
+                <div class="skill-item">
+                  <ion-icon name="logo-vercel"></ion-icon>Vercel
+                </div>
+              </div>
 
+              <div class="about-tabs">
+                <button
+                  type="button"
+                  class="tab-item active"
+                  data-target="#formacao"
+                >
+                  formação
+                </button>
+                <button
+                  type="button"
+                  class="tab-item"
+                  data-target="#experiencia"
+                >
+                  extracurricular
+                </button>
+              </div>
+              <!-- Começo da sessão formação -->
+              <div class="tab-content active" id="formacao">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="date">2016 - 2019</span>
+                    <h4>
+                      curso técnico em redes de computadores -
+                      <span>E.E.E.P Dom Walfrido Teixeira Vieira</span>
+                    </h4>
+                    <p></p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2019 - 2022</span>
+                    <h4>
+                      superior em análise e desenvolvimento de sistemas -
+                      <span>Universidade norte do paraná</span>
+                    </h4>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Término da Sessão formação -->
 
-	<!-- Começa o Main -->
-	<div class="main gradient-background">
+              <!-- Sessão cursos começa -->
+              <div class="tab-content" id="experiencia">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="date">2020 - 2020</span>
+                    <h4>Curso de bootstrap - <span>udemy, brasil</span></h4>
+                    <p>Carga Horária: 8 Horas</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2019 - 2020</span>
+                    <h4>
+                      Curso completo de php 7 - <span>HCODE Treinamentos</span>
+                    </h4>
+                    <p>Carga Horária: 33 horas</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2020 - 2021</span>
+                    <h4>
+                      Desenvolvimento Web com JavaScript, TypeScript e Angular -
+                      <span>Udemy</span>
+                    </h4>
+                    <p>carga horária: 38.5 horas</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2022 - 2022</span>
+                    <h4>
+                      Curso de HTML, CSS e javascript (Curso Desenvolvimento web
+                      fullstack) - <span>progamadorBR</span>
+                    </h4>
+                    <p>carga horária: 26 horas</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2022 - 2022</span>
+                    <h4>
+                      Desenvolvimento Web Full Stack: NodeJS e MongoDB -
+                      <span>progamadorBR</span>
+                    </h4>
+                    <p>carga horária: 13 horas</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2022 - 2023</span>
+                    <h4>
+                      Aprenda Flutter e Desenvolva Apps Para Android e IOS 2022
+                      -
+                      <span>Cod3r</span>
+                    </h4>
+                    <p>carga horária: 60 horas</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2023 - 2023</span>
+                    <h4>
+                      Desenvolvimento Web Full Stack: Firebase, JQuery e
+                      Bootstrap - <span>progamadorBR</span>
+                    </h4>
+                    <p>carga horária: 9 horas</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Sessão cursos termina -->
 
+              <a
+                href="/documents/GUILHERME MESQUITA ROCHA.pdf"
+                target="_blank"
+                class="btn"
+                >Baixar currículo</a
+              >
+              <a href="#contact" class="btn link-item">Contato</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sessão Sobre Termina -->
 
-		<!-- Header inicio -->
-		<header class="header">
-			<div class="container">
-				<div class="row flex-end">
-					<button type="button" class="nav-toggler">
-						<span></span>
-					</button>
-					<nav class="nav">
-						<div class="nav-inner">
-							<ul>
-								<li><a href="#home" class="nav-item link-item">inicio</a></li>
-								<li><a href="#about" class="nav-item link-item">sobre mim</a></li>
-								<li><a href="#portfolio" class="nav-item link-item">projetos</a></li>
-								<li><a href="#contact" class="nav-item link-item">contato</a></li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</header>
-		<!-- Header inicio -->
+      <!-- Sessão portifolio começo 😍 -->
+      <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="logo flex-end">
+          <h1>< G /></h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>projetos web</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/wppBanner.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">whatsapp web em react js</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    O projeto "Clone Whatsapp" tem como intuito o meu
+                    aprendizado na linguagem javascript e utilizando como
+                    framework ReactJs, o aplicativo possui ao maximo ter a mesma
+                    interface do própio Whatsapp, onde utiliza-se para
+                    autenticação o Facebook através do Firebase, projeto
+                    inspirado no professor Bonieky Lacerda, com algumas
+                    implementações a mais.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>27 dez 2021</span></li>
+                    <li>
+                      tecnologias usadas -
+                      <span
+                        >reactJs, firebase, api do facebook, materialUI
+                      </span>
+                    </li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/Chat-online"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/Chat-online</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://chat-online-five.vercel.app/"
+                          target="_blank"
+                          >https://chat-online-five.vercel.app/</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/NikeBanner.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">lading page da nike</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Landing page da marca da nike, foi feita no intuito de
+                    aperfeiçoar meu conhecimento em estilização e código
+                    javascript, a página troca a cor do background ao selecionar
+                    o tênis.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>10 dez 2021</span></li>
+                    <li>
+                      tecnologias usadas - <span>HTML, CSS, javascript </span>
+                    </li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/Nike-landing-page/tree/main"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/Nike-landing-page/tree/main</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://nike-landing-page.vercel.app/"
+                          target="_blank"
+                          >https://nike-landing-page.vercel.app/</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/GameRoomBanner.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">game room</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Game Room é um projeto simulando uma loja virtual de games e
+                    consoles, é responsivo e possui carrousel de produtos e
+                    animações com html css e javascript puro.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>23 nov 2021</span></li>
+                    <li>
+                      tecnologias usadas - <span>HTML, CSS, javascript </span>
+                    </li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/GameRoom/tree/main"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/GameRoom</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://game-room-vert.vercel.app/"
+                          target="_blank"
+                          >https://game-room-vert.vercel.app/</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/CivicBanner.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">lading page honda civic</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Projeto de landing page do carro honda civic, possui botão
+                    para dark-mode e light-mode.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>05 out 2021</span></li>
+                    <li>
+                      tecnologias usadas -
+                      <span
+                        >reactJs, firebase, api do facebook, materialUI
+                      </span>
+                    </li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/Honda-Civic-Website/"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/Honda-Civic-Website/</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://honda-civic-website-omega.vercel.app/"
+                          target="_blank"
+                          >https://honda-civic-website-omega.vercel.app/</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/pizzahubbanner.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">pizzaHub</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Feito em React, Este site utiliza styled components uma
+                    ótima ferramenta para integrar css no javascript.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>05 dez 2021</span></li>
+                    <li>
+                      tecnologias usadas -
+                      <span
+                        >reactJs, react-icons, styled-components, javascript
+                      </span>
+                    </li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/PizzaHub/tree/main"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/PizzaHub/</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://pizza-hub-rho.vercel.app/"
+                          target="_blank"
+                          >https://pizza-hub-rho.vercel.app/</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/LolBanner.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">Login League of legends</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    A replicação da tela de autenticação do jogo "league of
+                    legends" via HTML & CSS.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>15 nov 2021</span></li>
+                    <li>tecnologias usadas - <span>html, css. </span></li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/LeagueOfLegendsLogin/tree/main"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/LeagueOfLegendsLogin/</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://league-of-legends-login.vercel.app/"
+                          target="_blank"
+                          >https://vercel.com/guilherme-devcode/league-of-legends-login</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/CalcBanner.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">Calculadora</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Uma calculadora com todas as operações matemáticas como:
+                    (adição, subtração, multiplicação, divisão) com botões de
+                    limpar tela, remoção de cada digito digitado e igualdade.
+                    Feita com html, css e javascript puro.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>02 dez 2021</span></li>
+                    <li>
+                      tecnologias usadas -
+                      <span
+                        >reactJs, firebase, api do facebook e materialUI
+                      </span>
+                    </li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/Calculadora"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/Calculadora</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://calculadora-one-iota.vercel.app/"
+                          target="_blank"
+                          >https://calculadora-one-iota.vercel.app/</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+            <!-- Items do portifolio inicio-->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="Images/churras.png" alt="" />
+              </div>
+              <h3 class="portfolio-item-title">Churrascômetro</h3>
+              <button type="button" class="btn view-project-btn">
+                detalhes
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Site para calcular quanto você leva de carne, bebida e
+                    cerveja para churrasco com base nas pessoas que iram.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Criado em - <span>27 dez 2021</span></li>
+                    <li>
+                      tecnologias usadas - <span>HTML, CSS, Javascript </span>
+                    </li>
+                    <li>
+                      github -
+                      <span
+                        ><a
+                          href="https://github.com/Guilherme-devcode/Churras/tree/main"
+                          target="_blank"
+                          >https://github.com/Guilherme-devcode/Churras/</a
+                        ></span
+                      >
+                    </li>
+                    <li>
+                      acessar projeto -
+                      <span
+                        ><a
+                          href="https://churrascometro-fawn.vercel.app/"
+                          target="_blank"
+                          >https://churrascometro-fawn.vercel.app/</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                  <h2>projetos mobile</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Items do portifolio fim -->
+          </div>
+        </div>
+      </section>
+      <!-- Sessão portifolio fim 😍 -->
 
-
-		<!-- Sessão home começa-->
-		<section class="home-section align-items-center active" id="home">
-			<div class="logo flex-end">
-				<h1>< G /></h1>
-			</div>
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="home-text">
-						<p>Olá, eu sou o</p>
-						<h1>Guilherme</h1>
-						<h2>Desenvolvedor Front end</h2>
-						<a href="#about" class="btn link-item">mais sobre mim</a>
-						<a href="#portfolio" class="btn link-item">portifolio</a>
-					</div>
-					<div class="home-img">
-						<div class="img-box">
-							<img src="Images/profile-pic.jpg" alt="profile-img">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Sessão home termina-->
-
-		<!-- Sessão Sobre Começa -->
-		<section class="about-section sec-padding " id="about">
-			<div class="logo">
-				<h1>< G /></h1>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="section-title">
-						<h2>sobre mim</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="about-img">
-						<div class="img-box">
-							<img class="img" src="Images/profile.png">
-						</div>
-					</div>
-					<div class="about-text">
-						<p>Desde criança tive apreço pelo mundo da tecnologia, possui computadores e sempre me despertou o desejo de programar mas não sabia em qual área,
-							desde então comecei a me especializar em desenvolvimento web e descobri minha paixão.
-							Sou uma pessoa criativa e eu esboço isso nos sites que faço com coração 💗
-						</p>
-						<h3>Habilidades</h3>
-						<div class="skills">
-							<div class="skill-item">
-								<ion-icon name="logo-html5"></ion-icon>html
-							</div>
-							<div class="skill-item">
-								<ion-icon name="logo-css3"></ion-icon>css
-							</div>
-							<div class="skill-item">
-								<ion-icon name="logo-javascript"></ion-icon>javascript
-							</div>
-							<div class="skill-item">
-								<ion-icon name="logo-react"></ion-icon>reactjs
-							</div>
-							<div class="skill-item">
-								<ion-icon name="logo-firebase"></ion-icon>firebase
-							</div>
-							<div class="skill-item">
-								<ion-icon name="logo-github"></ion-icon>Github
-							</div>
-							<div class="skill-item">
-								<ion-icon name="logo-vercel"></ion-icon>Vercel
-							</div>
-						</div>
-
-						<div class="about-tabs">
-							<button type="button" class="tab-item active" data-target="#formacao">formação</button>
-							<button type="button" class="tab-item" data-target="#experiencia">extracurricular</button>
-						</div>
-						<!-- Começo da sessão formação -->
-						<div class="tab-content active" id="formacao">
-							<div class="timeline">
-								<div class="timeline-item">
-									<span class="date">2016 - 2019</span>
-									<h4>curso técnico em redes de computadores - <span>E.E.E.P Dom Walfrido Teixeira
-											Vieira</span></h4>
-									<p></p>
-								</div>
-								<div class="timeline-item">
-									<span class="date">2019 - 2022</span>
-									<h4>superior em análise e desenvolvimento de sistemas - <span>Universidade norte do
-											paraná</span></h4>
-									<p></p>
-								</div>
-							</div>
-						</div>
-						<!-- Término da Sessão formação -->
-
-						<!-- Sessão cursos começa -->
-						<div class="tab-content" id="experiencia">
-							<div class="timeline">
-								<div class="timeline-item">
-									<span class="date">2020 - 2020</span>
-									<h4>Curso de bootstrap - <span>udemy, brasil</span></h4>
-									<p>Carga Horária: 8 Horas</p>
-								</div>
-								<div class="timeline-item">
-									<span class="date">2019 - 2020</span>
-									<h4>Curso completo de php 7 - <span>HCODE Treinamentos</span></h4>
-									<p>Carga Horária: 33 horas</p>
-								</div>
-								<div class="timeline-item">
-									<span class="date">2020 - 2021</span>
-									<h4>curso de tecnologias de informação aplicadas ao direito - <span>UNOPAR</span></h4>
-									<p>carga horária: 60 horas</p>
-								</div>
-								<div class="timeline-item">
-									<span class="date">2020 - 2021</span>
-									<h4>curso de direito eletrônico - <span>UNOPAR</span></h4>
-									<p>carga horária: 60 horas</p>
-								</div>
-								<div class="timeline-item">
-									<span class="date">2022 - 2022</span>
-									<h4>Curso de HTML, CSS e javascript (Curso Desenvolvimento web fullstack) - <span>progamadorBR</span></h4>
-									<p>carga horária: 26 horas</p>
-								</div>
-							</div>
-						</div>
-						<!-- Sessão cursos termina -->
-
-						<a href="/documents/GUILHERME MESQUITA ROCHA.pdf" target="_blank" class="btn">Baixar currículo</a>
-						<a href="#contact" class="btn link-item">Contato</a>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Sessão Sobre Termina -->
-
-		<!-- Sessão portifolio começo 😍 -->
-		<section class="portfolio-section sec-padding " id="portfolio">
-			<div class="logo flex-end">
-				<h1>< G /></h1>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="section-title">
-						<h2>projetos feitos por mim </h2>
-					</div>
-				</div>
-				<div class="row">
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/wppBanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">whatsapp web em react js</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>O projeto "Clone Whatsapp" tem como intuito o meu aprendizado na linguagem javascript e utilizando como framework ReactJs, o aplicativo possui ao maximo ter a mesma interface do própio Whatsapp, onde utiliza-se para autenticação o Facebook através do Firebase, projeto inspirado no professor Bonieky Lacerda, com algumas implementações a mais.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>27 dez 2021</span></li>
-									<li>tecnologias usadas - <span>reactJs, firebase, api do facebook, materialUI
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/Chat-online"
-												target="_blank">https://github.com/Guilherme-devcode/Chat-online</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://chat-online-five.vercel.app/"
-												target="_blank">https://chat-online-five.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/NikeBanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">lading page da nike</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>Landing page da marca da nike, foi feita no intuito de aperfeiçoar meu conhecimento em estilização e código javascript, a página troca a cor do background ao selecionar o tênis.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>10 dez 2021</span></li>
-									<li>tecnologias usadas - <span>HTML, CSS, javascript
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/Nike-landing-page/tree/main"
-												target="_blank">https://github.com/Guilherme-devcode/Nike-landing-page/tree/main</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://nike-landing-page.vercel.app/"
-												target="_blank">https://nike-landing-page.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/GameRoomBanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">game room</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>Game Room é um projeto simulando uma loja virtual de games e consoles, é responsivo e possui carrousel de produtos e animações com html css e javascript puro.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>23 nov 2021</span></li>
-									<li>tecnologias usadas - <span>HTML, CSS, javascript
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/GameRoom/tree/main"
-												target="_blank">https://github.com/Guilherme-devcode/GameRoom</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://game-room-vert.vercel.app/"
-												target="_blank">https://game-room-vert.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/ThailandBanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">voyage</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>Site de viagens a tailândia, um paraíso tropical, feito no intuito de aperfeiçoamento na área de estilização via CSS. </p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>27 dez 2021</span></li>
-									<li>tecnologias usadas - <span>HTML, CSS, javascript
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/Thailandia/"
-												target="_blank">https://github.com/Guilherme-devcode/Thailandia/</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://thailandia-blond.vercel.app/"
-												target="_blank">https://thailandia-blond.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/CivicBanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">lading page honda civic</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>Projeto de landing page do carro honda civic, possui botão para dark-mode e light-mode.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>05 out 2021</span></li>
-									<li>tecnologias usadas - <span>reactJs, firebase, api do facebook, materialUI
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/Honda-Civic-Website/"
-												target="_blank">https://github.com/Guilherme-devcode/Honda-Civic-Website/</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://honda-civic-website-omega.vercel.app/"
-												target="_blank">https://honda-civic-website-omega.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/pizzahubbanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">pizzaHub</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>Feito em React, Este site utiliza styled components uma ótima ferramenta para integrar css no javascript.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>05 dez 2021</span></li>
-									<li>tecnologias usadas - <span>reactJs, react-icons, styled-components, javascript
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/PizzaHub/tree/main"
-												target="_blank">https://github.com/Guilherme-devcode/PizzaHub/</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://pizza-hub-rho.vercel.app/"
-												target="_blank">https://pizza-hub-rho.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/LolBanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">Login League of legends</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>A replicação da tela de autenticação do jogo "league of legends" via HTML & CSS.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>15 nov 2021</span></li>
-									<li>tecnologias usadas - <span>html, css.
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/LeagueOfLegendsLogin/tree/main"
-												target="_blank">https://github.com/Guilherme-devcode/LeagueOfLegendsLogin/</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://league-of-legends-login.vercel.app/"
-												target="_blank">https://vercel.com/guilherme-devcode/league-of-legends-login</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/CalcBanner.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">Calculadora</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>Uma calculadora com todas as operações matemáticas como: (adição, subtração, multiplicação, divisão) com botões de limpar tela, remoção de cada digito digitado e igualdade. Feita com html, css e javascript puro.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>02 dez 2021</span></li>
-									<li>tecnologias usadas - <span>reactJs, firebase, api do facebook e materialUI
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/Calculadora"
-												target="_blank">https://github.com/Guilherme-devcode/Calculadora</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://calculadora-one-iota.vercel.app/"
-												target="_blank">https://calculadora-one-iota.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-					<!-- Items do portifolio inicio-->
-					<div class="portfolio-item">
-						<div class="portfolio-item-thumbnail">
-							<img src="Images/churras.png" alt="">
-						</div>
-						<h3 class="portfolio-item-title">Churrascômetro</h3>
-						<button type="button" class="btn view-project-btn">detalhes</button>
-						<div class="portfolio-item-details">
-							<div class="description">
-								<p>Site para calcular quanto você leva de carne, bebida e cerveja para churrasco com base nas pessoas que iram.</p>
-							</div>
-							<div class="general-info">
-								<ul>
-									<li>Criado em - <span>27 dez 2021</span></li>
-									<li>tecnologias usadas - <span>HTML, CSS, Javascript
-										</span></li>
-									<li>github - <span><a href="https://github.com/Guilherme-devcode/Churras/tree/main"
-												target="_blank">https://github.com/Guilherme-devcode/Churras/</a></span>
-									</li>
-									<li>acessar projeto - <span><a href="https://churrascometro-fawn.vercel.app/"
-												target="_blank">https://churrascometro-fawn.vercel.app/</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- Items do portifolio fim -->
-				</div>
-			</div>
-		</section>
-		<!-- Sessão portifolio fim 😍 -->
-
-		<!-- Sessao contato inicio -->
-		<section class="contact-section sec-padding" id="contact">
-			<div class="logo">
-				<h1>< G /></h1>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="section-title">
-						<h2>contato</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="contact-form">
-						<form>
-							<div class="row">
-								<div class="input-group">
-									<input type="text" placeholder="Nome" class="input-control" required>
-								</div>
-								<div class="input-group">
-									<input type="text" placeholder="Email" class="input-control" required>
-								</div>
-								<div class="input-group">
-									<input type="text" placeholder="Assunto" class="input-control" required>
-								</div>
-								<div class="input-group">
-									<textarea placeholder="Mensagem" class="input-control" required></textarea>
-								</div>
-								<div class="submit-btn">
-									<button type="submit" class="btn">enviar mensagem</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="contact-info">
-						<div class="contact-info-item">
-							<h3>Email</h3>
-							<p>guilherme.mesquita.rocha@gmail.com</p>
-						</div>
-						<div class="contact-info-item">
-							<h3>Telefone</h3>
-							<p>(88) 98824-0342</p>
-						</div>
-						<div class="contact-info-item">
-							<h3>Me siga nas redes sociais</h3>
-							<div class="social-links">
-								<a href="https://www.instagram.com/guilherme_devcode/" target="_blank">
-									<ion-icon name="logo-instagram"></ion-icon>
-								</a>
-								<a href="https://www.linkedin.com/in/guilherme-mesquita-rocha-7b3a69220/" target="_blank">
-									<ion-icon name="logo-linkedin"></ion-icon>
-								</a>
-								<a href="https://github.com/Guilherme-devcode" target="_blank">
-									<ion-icon name="logo-github"></ion-icon>
-								</a>
-								<!-- <a href="#" target="_blank">
+      <!-- Sessao contato inicio -->
+      <section class="contact-section sec-padding" id="contact">
+        <div class="logo">
+          <h1>< G /></h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>contato</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Nome"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Assunto"
+                      class="input-control"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <textarea
+                      placeholder="Mensagem"
+                      class="input-control"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit" class="btn">enviar mensagem</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3>Email</h3>
+                <p>guilherme.mesquita.rocha@gmail.com</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>Telefone</h3>
+                <p>(88) 98824-0342</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>Me siga nas redes sociais</h3>
+                <div class="social-links">
+                  <a
+                    href="https://www.instagram.com/guilherme_devcode/"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/guilherme-mesquita-rocha-7b3a69220/"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                  <a
+                    href="https://github.com/Guilherme-devcode"
+                    target="_blank"
+                  >
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <!-- <a href="#" target="_blank">
 									<ion-icon name="logo-whatsapp"></ion-icon>
 								</a> -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Sessao contato fim -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sessao contato fim -->
+    </div>
+    <!-- Termina o Main -->
 
-	</div>
-	<!-- Termina o Main -->
+    <!-- Popup dos items do portifolio inicio -->
+    <div class="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button type="button" class="btn pp-close">
+              <ion-icon name="close"></ion-icon>
+            </button>
+            <div class="pp-thumbnail">
+              <img src="Images/wppBanner.png" alt="pp-thumbnail" />
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup dos items do portifolio fim -->
 
-	<!-- Popup dos items do portifolio inicio -->
-	<div class="portfolio-popup">
-
-		<div class="pp-inner">
-			<div class="pp-content">
-				<div class="pp-header">
-					<button type="button" class="btn pp-close">
-						<ion-icon name="close"></ion-icon>
-					</button>
-					<div class="pp-thumbnail">
-						<img src="Images/wppBanner.png" alt="pp-thumbnail">
-					</div>
-					<h3></h3>
-				</div>
-				<div class="pp-body">
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Popup dos items do portifolio fim -->
-
-
-	<script type="text/javascript" src="Scripts/vanilla-tilt.js"></script>
-	<script type="text/javascript">
-		VanillaTilt.init(document.querySelector(".about-img"), {
-			max: 25,
-			speed: 400,
-
-		});
-
-	</script>
-	<script type="text/javascript" src="Scripts/script.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script type="text/javascript" src="Scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".about-img"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+    <script type="text/javascript" src="Scripts/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
